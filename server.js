@@ -4,7 +4,7 @@ const port = 3000;
 
 app.get('/posts', async(req, res) => {
     try{
-        const response = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=1');
+        const response = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=10');
         const data = await response.json();
         res.send(data);
     }
