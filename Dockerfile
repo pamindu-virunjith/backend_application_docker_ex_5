@@ -20,4 +20,4 @@ CMD [ "npm", "run", "start" ]
 # docker run --name server-image-container -p 3000:3000 server-image
 
 # create docker container(with volume)
-#  docker run --name server-image-container --rm -p 3000:3000 -v /app/node_modules -v ${PWD} server-image
+# docker run --name server-image-container --rm -p 3000:3000 -v /app/node_modules -v ${PWD}:/app server-image
